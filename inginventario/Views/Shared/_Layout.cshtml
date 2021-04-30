@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav>
+        <p>Aquí irá el menú</p>
+    </nav>
+    <div> 
+        <!--Se cargan las páginas sobre este layout-->
+        @RenderBody()
+    </div>
+    <hr />
+    <footer>Esta es mi primera página - @DateTime.Now</footer>
+</body>
+</html>
